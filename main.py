@@ -45,6 +45,57 @@ exlcuded_classes = [
 #  'OFFICER'
 ]
 
+"""
+The following was derived via:
+>>> max_len_by_class = {}
+>>> for t in name_data:
+...     name_lens = [len(x) for x in name_data[t]]
+...     max_len_by_class[t] = max(name_lens)
+
+I listed it explicitly since it is useful information to know. This is not 
+a theoretical limit on length, just lists the longest length name used in the
+game by each class. For example, Youngster's max is 6, however I believe the 
+actual theortical limit is 8 characters before the name begins to clip.
+"""
+
+max_length_used_by_class = {
+  'SCIENTIST': 5, 
+  'YOUNGSTER': 6, 
+  'SCHOOLBOY': 6, 
+  'BIRD_KEEPER': 5, 
+  'LASS': 8, 
+  'COOLTRAINERM': 5, 
+  'COOLTRAINERF': 5, 
+  'BEAUTY': 8, 
+  'POKEMANIAC': 6, 
+  'GENTLEMAN': 7, 
+  'SKIER': 8, 
+  'TEACHER': 7, 
+  'BUG_CATCHER': 5, 
+  'FISHER': 7, 
+  'SWIMMERM': 7, 
+  'SWIMMERF': 6, 
+  'SAILOR': 7, 
+  'SUPER_NERD': 6, 
+  'GUITARIST': 7, 
+  'HIKER': 8, 
+  'BIKER': 7, 
+  'BURGLAR': 6, 
+  'FIREBREATHER': 4, 
+  'JUGGLER': 6, 
+  'BLACKBELT_T': 5, 
+  'PSYCHIC_T': 8, 
+  'PICNICKER': 7, 
+  'CAMPER': 7, 
+  'SAGE': 7, 
+  'MEDIUM': 7, 
+  'BOARDER': 7, 
+  'POKEFANM': 7, 
+  'KIMONO_GIRL': 5, 
+  'POKEFANF': 7, 
+  'OFFICER': 5
+}
+
 # build trainer list
 trainer_list = []
 for trainer_class in name_data:
