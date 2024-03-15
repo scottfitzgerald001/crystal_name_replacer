@@ -40,5 +40,7 @@ After that runs, you need to build the crystal rom:
 ### How do I reset the trainer file?
 
 If you want to rerun this mapper, checkout the trainer.asm file again before running a new mapping:
+
 `cd pokecrystal`
+
 `git checkout data/trainers/parties.asm`
