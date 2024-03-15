@@ -22,14 +22,19 @@ You will see two json files:
 This is a quick python script that goes into the rom and maps new name onto the trainer classes. 
 
 To set up you will need to clone the pret repo into the same directory as the main file:
+
 `git clone https://github.com/pret/pokecrystal.git`
 
 Then you simply update the input files accordingly and run the program with:
+
 `python3 ./main.py`
 
 After that runs, you need to build the crystal rom:
+
 `cd pokecrystal`
+
 `make` 
+
 ^ Note that you may need to do some additional setup for downloading tools that  enables compiling Crystal's rom
 
 ### How do I reset the trainer file?
